@@ -1,0 +1,55 @@
+.banner {
+  margin-top: 0;
+  padding: 260px 0px 350px 0px;
+  background-image: url("../assets/img/bg-image.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #00142cd6 15%, #00142c 100%);
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.banner-main-text {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+.banner p {
+  color: #b8b8b8;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+.banner img {
+  margin-top: 100px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.wrap {
+  color: #0ec9ac;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

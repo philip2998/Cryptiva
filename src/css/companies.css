@@ -1,0 +1,32 @@
+.company {
+  animation: fadeInDown 2s;
+  background-color: #00142c;
+}
+.company span {
+  color: #0ec9ac;
+  position: relative;
+  top: -5px;
+}
+.company h2 {
+  font-size: 30px;
+}
+.company img {
+  width: 140px;
+  filter: brightness(200%) contrast(200%) saturate(0%) blur(0px)
+    hue-rotate(0deg);
+  transition-duration: 0.25s;
+}
+.company img:hover {
+  filter: none;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
