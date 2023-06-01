@@ -33,6 +33,7 @@ const Companies = () => {
           {companyData.map((company, index) => (
             <Company
               key={index}
+              id={index}
               imageSrc={company.imageSrc}
               imageAlt={company.imageAlt}
             />
