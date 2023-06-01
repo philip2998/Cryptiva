@@ -1,15 +1,23 @@
-import software from "../../assets/img/software.svg";
-import hexatech from "../../assets/img/hexatech.svg";
-import metrics from "../../assets/img/metrics.svg";
-import tripletech from "../../assets/img/tripletech.svg";
+import Company from './Company';
+import software from '../../assets/img/software.svg';
+import hexatech from '../../assets/img/hexatech.svg';
+import metrics from '../../assets/img/metrics.svg';
+import tripletech from '../../assets/img/tripletech.svg';
 
 const Companies = () => {
+  const companyData = [
+    { imageSrc: software, imageAlt: 'Software Company' },
+    { imageSrc: hexatech, imageAlt: 'Hexatech Company' },
+    { imageSrc: metrics, imageAlt: 'Metrics Company' },
+    { imageSrc: tripletech, imageAlt: 'Tripletech Company' },
+  ];
+
   return (
     <section className="company" id="companies">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="companies-container d-flex justify-content-center mt-5">
+            <div className="d-flex justify-content-center mt-5">
               <div className="companies-widget text-center">
                 <h2>
                   Trusted Over <span>2300 + </span>Companies in the World
@@ -18,23 +26,17 @@ const Companies = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="d-flex justify-content-around mt-5">
-            <div className="company-element">
-              <img src={software} alt="Software Company"></img>
-            </div>
-            <div className="company-element">
-              <img src={hexatech} alt="Hexatech Company"></img>
-            </div>
-            <div className="company-element">
-              <img src={metrics} alt="Metrics Company"></img>
-            </div>
-            <div className="company-element">
-              <img src={tripletech} alt="Tripletech Company"></img>
-            </div>
-          </div>
+        <div
+          className="row d-flex justify-content-center mt-5"
+          style={{ marginLeft: '100px' }}
+        >
+          {companyData.map((company, index) => (
+            <Company
+              key={index}
+              imageSrc={company.imageSrc}
+              imageAlt={company.imageAlt}
+            />
+          ))}
         </div>
       </div>
     </section>

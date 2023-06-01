@@ -1,9 +1,9 @@
-import ProtectionPicture from "./ProtectionPicture";
-import AboutProtection from "./AboutProtection";
+import ProtectionPicture from './ProtectionPicture';
+import AboutProtection from './AboutProtection';
 
 const Protection = () => {
   return (
-    <div className="container protection">
+    <section className="container protection">
       <div className="row">
         <div className="col-md-6">
           <ProtectionPicture />
@@ -12,7 +12,7 @@ const Protection = () => {
           <AboutProtection />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

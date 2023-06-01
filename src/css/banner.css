@@ -1,7 +1,7 @@
 .banner {
   margin-top: 0;
   padding: 260px 0px 350px 0px;
-  background-image: url("../assets/img/bg-image.jpg");
+  background-image: url('../assets/img/bg-image.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,32 +17,24 @@
   position: absolute;
 }
 .banner-main-text {
-  font-size: 55px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  margin-top: 200px;
-  margin-bottom: 20px;
-  display: block;
+  margin-top: 12.5rem;
 }
 .banner h1 {
   font-size: 55px;
   font-weight: 700;
 }
 .banner p {
-  color: #b8b8b8;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
+  padding-right: 5rem;
+  color: #828fa0;
   width: 96%;
 }
 .banner img {
-  margin-top: 100px;
+  margin-top: 6.875rem;
   animation: slideIn 1.5s ease-in-out;
 }
 
 .wrap {
-  color: #0ec9ac;
+  color: var(--color-green);
 }
 
 @keyframes slideIn {
@@ -51,5 +43,14 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 991px) and (min-width: 751px) {
+  .banner p {
+    padding: 0;
+  }
+  .banner-main-text {
+    margin-top: 6.25rem;
   }
 }

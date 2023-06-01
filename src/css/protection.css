@@ -1,5 +1,5 @@
 .protection {
-  background-color: #00142c;
+  background-color: var(--color-blue-primary);
   position: relative;
 }
 

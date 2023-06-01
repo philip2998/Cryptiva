@@ -3,12 +3,12 @@
   border: none !important;
 }
 .skill {
-  background-color: #00142c;
+  background-color: var(--color-blue-primary);
   position: relative;
 }
 .item-box {
   animation: fadeInUp 2s;
-  background-color: #011936;
+  background-color: var(--color-blue-secondary);
   border-radius: 10px 10px;
 }
 .skill img {

@@ -1,10 +1,10 @@
-import protection from "../../assets/img/protection.svg";
+import protection from '../../assets/img/protection.jpg';
 
 const ProtectionPicture = () => {
   return (
     <div className="container prot-picture">
       <div className="row">
-        <div className="position-relative">
+        <div className="position-relative main-picture">
           <img src={protection} alt="Protection"></img>
           <div className="position-absolute">
             <h4>We Are Open For Opportunities!</h4>

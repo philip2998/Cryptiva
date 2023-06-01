@@ -1,18 +1,26 @@
 /************ Custom Font ************/
 @font-face {
   font-family: Centra;
-  src: url("../assets/font/CentraNo2-Bold.ttf");
+  src: url('../assets/font/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
 @font-face {
   font-family: Centra;
-  src: url("../assets/font/CentraNo2-Medium.ttf");
+  src: url('../assets/font/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
 @font-face {
   font-family: Centra;
-  src: url("../assets/font/CentraNo2-Book.ttf");
+  src: url('../assets/font/CentraNo2-Book.ttf');
   font-weight: 400;
+}
+
+/************ Custom Colors **********/
+:root {
+  --color-white: #ffffff;
+  --color-green: #0ec9ac;
+  --color-blue-primary: #00142c;
+  --color-blue-secondary: #011936;
 }
 
 /************ Default Css ************/
@@ -33,7 +41,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: "Centra", sans-serif !important;
+  font-family: 'Centra', sans-serif !important;
 }
 
 h1,
@@ -130,7 +138,7 @@ select:focus {
   z-index: 0;
 }
 .project .nav.nav-pills .nav-link::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 100%;
@@ -165,7 +173,7 @@ select:focus {
   margin-bottom: 24px;
 }
 .proj-imgbx::before {
-  content: "";
+  content: '';
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   opacity: 0.85;
   position: absolute;
@@ -273,7 +281,7 @@ select:focus {
   color: #fff;
 }
 .contact form button::before {
-  content: "";
+  content: '';
   background: #121212;
   width: 0;
   height: 100%;
@@ -290,7 +298,7 @@ select:focus {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url("../assets/img/footer-bg.png");
+  background-image: url('../assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -318,7 +326,7 @@ select:focus {
   align-items: center;
 }
 .new-email-bx::before {
-  content: "";
+  content: '';
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   border-radius: 20px;
   position: absolute;
@@ -329,7 +337,7 @@ select:focus {
   right: -1px;
 }
 .new-email-bx::after {
-  content: "";
+  content: '';
   background: #fff;
   border-radius: 20px;
   position: absolute;
