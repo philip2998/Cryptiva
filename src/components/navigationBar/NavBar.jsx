@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavLink from './NavLink';
 import logo from '../../assets/img/logo.svg';
@@ -7,6 +7,7 @@ import logo from '../../assets/img/logo.svg';
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [isDropdownOpen, setIsDrowpdownOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -26,14 +27,12 @@ const NavBar = () => {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About Us' },
     { href: '#services', label: 'Services' },
-    { href: '#pages', label: 'Pages' },
-    { href: '#blog', label: 'Blog' },
     { href: '#contact', label: 'Contact' },
   ];
 
-  const onUpdateActiveLink = value => {
-    setActiveLink(value);
-  };
+  const onUpdateActiveLink = value => setActiveLink(value);
+  const handleDropdownOpen = () => setIsDrowpdownOpen(true);
+  const handleDropdownClose = () => setIsDrowpdownOpen(false);
 
   return (
     <Router>
@@ -47,17 +46,39 @@ const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              {navLinks.map((link, index) => (
-                <NavLink
-                  key={index}
-                  id={index}
-                  activeLink={activeLink}
-                  onUpdateActiveLink={onUpdateActiveLink}
-                  href={link.href}
-                >
-                  {link.label}
-                </NavLink>
-              ))}
+              {navLinks.map((link, index) =>
+                link.label === 'Services' ? (
+                  <NavDropdown
+                    key={index}
+                    title={link.label}
+                    id="nav-bar-dropdown"
+                    className="navbar-link service-link"
+                    show={isDropdownOpen}
+                    onMouseEnter={handleDropdownOpen}
+                    onMouseLeave={handleDropdownClose}
+                  >
+                    <NavDropdown.Item
+                      className="dropdown-box bg-white rounded px-4"
+                      href="#services"
+                    >
+                      <p className="dropwdown-text mb-0">
+                        Infrastructure Modernization
+                      </p>
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                ) : (
+                  <NavLink
+                    key={index}
+                    id={index}
+                    activeLink={activeLink}
+                    onUpdateActiveLink={onUpdateActiveLink}
+                    href={link.href}
+                    className="navbar-link"
+                  >
+                    {link.label}
+                  </NavLink>
+                )
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

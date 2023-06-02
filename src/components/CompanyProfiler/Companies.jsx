@@ -19,8 +19,10 @@ const Companies = () => {
           <div className="col-md-12">
             <div className="d-flex justify-content-center mt-5">
               <div className="companies-widget text-center">
-                <h2>
-                  Trusted Over <span>2300 + </span>Companies in the World
+                <h2 className="fs-3">
+                  Trusted Over{' '}
+                  <span className="position-relative mt-n5">2300 + </span>
+                  Companies in the World
                 </h2>
               </div>
             </div>

@@ -5,10 +5,10 @@ const Protection = () => {
   return (
     <section className="container protection">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-sm-12 col-md-6 d-flex flex-wrap">
           <ProtectionPicture />
         </div>
-        <div className="col-md-6">
+        <div className="col-sm-12 col-md-6 d-flex flex-wrap">
           <AboutProtection />
         </div>
       </div>

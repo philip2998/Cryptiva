@@ -24,7 +24,7 @@ const Banner = () => {
                       >
                         <span className="wrap">{text}</span>
                       </span>
-                      <h1>With Reliable Service</h1>
+                      <h1 className="fw-bolder">With Reliable Service</h1>
                     </h1>
                   </div>
                   <p className="py-0 ps-0 fs-sm ls-wider lh-base">

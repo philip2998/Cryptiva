@@ -4,11 +4,7 @@
 }
 .company span {
   color: var(--color-green);
-  position: relative;
   top: -5px;
-}
-.company h2 {
-  font-size: 30px;
 }
 .company img {
   width: 140px;
@@ -19,7 +15,6 @@
 .company img:hover {
   filter: none;
 }
-
 @keyframes fadeInDown {
   from {
     opacity: 0;

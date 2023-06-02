@@ -2,17 +2,40 @@
   background-color: var(--color-blue-primary);
   position: relative;
 }
-
 .about-protection {
   padding: 15% 15% 15% 15%;
 }
-
+.about-protection h5 {
+  color: var(--color-green);
+}
+.about-protection p {
+  color: var(--color-gray);
+}
+.about-protection img {
+  width: 40px;
+  height: 40px;
+}
 .prot-picture {
   animation: fadeInLeft 2s;
 }
-
 .cryptiva-header {
   animation: fadeInRight 2s;
+}
+.opportunities {
+  height: 580px;
+}
+.opportunities img {
+  object-fit: cover;
+}
+.opportunities p {
+  color: var(--color-gray);
+}
+
+.opportunity-caption {
+  top: 450px;
+  right: 40px;
+  margin-right: 250px;
+  background-color: var(--color-blue-primary);
 }
 
 @keyframes fadeInLeft {
@@ -25,7 +48,6 @@
     transform: none;
   }
 }
-
 @keyframes fadeInRight {
   0% {
     opacity: 0;

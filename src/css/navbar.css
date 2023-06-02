@@ -13,15 +13,15 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
   width: 13%;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
+nav.navbar .navbar-nav .nav-link.nav-link {
   font-weight: 400;
   color: var(--color-white);
   letter-spacing: 0.8px;
   padding: 0 26px;
   font-size: 15px;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+nav.navbar .navbar-nav a.nav-link.nav-link:hover,
+nav.navbar .navbar-nav a.nav-link.nav-link.active {
   opacity: 1;
   color: var(--color-green);
 }
@@ -29,7 +29,9 @@ span.navbar-text {
   display: flex;
   align-items: center;
 }
-
+.dropwdown-text:hover {
+  color: var(--color-green);
+}
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
   outline: none;
@@ -74,4 +76,20 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border-color: transparent;
+}
+.dropdown-box {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+.service-link:hover .dropdown-box {
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

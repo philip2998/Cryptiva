@@ -15,10 +15,12 @@
   width: 10%;
   max-width: 100%;
 }
-.skill p {
-  color: #828fa0;
+.skill h4 {
+  color: var(--color-white);
 }
-
+.skill p {
+  color: var(--color-gray);
+}
 @keyframes fadeInUp {
   from {
     opacity: 0;

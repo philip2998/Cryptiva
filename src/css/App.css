@@ -18,9 +18,11 @@
 /************ Custom Colors **********/
 :root {
   --color-white: #ffffff;
+  --color-gray: #828fa0;
   --color-green: #0ec9ac;
   --color-blue-primary: #00142c;
   --color-blue-secondary: #011936;
+  --color-blue-tertiary: #00142cd6;
 }
 
 /************ Default Css ************/
