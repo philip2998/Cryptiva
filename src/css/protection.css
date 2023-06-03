@@ -10,6 +10,7 @@
 }
 .about-protection p {
   color: var(--color-gray);
+  padding-right: 2.5em;
 }
 .about-protection img {
   width: 40px;
@@ -31,10 +32,14 @@
   color: var(--color-gray);
 }
 
+.protection h4 {
+  padding-right: 6.25em;
+}
+
 .opportunity-caption {
-  top: 450px;
-  right: 40px;
-  margin-right: 250px;
+  top: 90%;
+  left: 33%;
+  transform: translate(-50%, -50%);
   background-color: var(--color-blue-primary);
 }
 

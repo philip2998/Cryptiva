@@ -3,7 +3,7 @@ import AboutProtection from './AboutProtection';
 
 const Protection = () => {
   return (
-    <section className="container protection">
+    <section className="container-fluid protection">
       <div className="row">
         <div className="col-sm-12 col-md-6 d-flex flex-wrap">
           <ProtectionPicture />
