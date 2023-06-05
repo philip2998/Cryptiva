@@ -1,0 +1,14 @@
+.key-figures {
+  background-color: var(--color-blue-secondary);
+  animation: fadeInUp 2s;
+}
+
+.icon-animation {
+  color: var(--color-green);
+}
+
+.super {
+  color: var(--color-green);
+  left: 5px;
+  vertical-align: super;
+}

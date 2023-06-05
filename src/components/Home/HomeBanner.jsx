@@ -1,7 +1,6 @@
 import Typewriter from './Typewriter';
 import headerImg from '../../assets/img/header-img.svg';
 import TrackVisibility from 'react-on-screen';
-import 'animate.css';
 
 const Banner = () => {
   const { text } = Typewriter(['Security', 'Protection', 'Company'], 1000);

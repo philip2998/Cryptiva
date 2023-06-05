@@ -61,9 +61,9 @@ const NavBar = () => {
                       className="dropdown-box bg-white rounded px-4"
                       href="#services"
                     >
-                      <p className="dropwdown-text mb-0">
+                      <span className="dropwdown-text mb-0">
                         Infrastructure Modernization
-                      </p>
+                      </span>
                     </NavDropdown.Item>
                   </NavDropdown>
                 ) : (
