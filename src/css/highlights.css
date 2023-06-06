@@ -11,10 +11,6 @@
   animation: fadeInUp 2s;
 }
 
-.number-animation {
-  transition: all 1s ease-in-out;
-}
-
 .figure-row {
   padding-left: 6.25em;
 }
