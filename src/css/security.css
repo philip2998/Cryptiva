@@ -40,3 +40,7 @@
 .why-us {
   animation: fadeInLeft 2s;
 }
+
+.security img {
+  animation: fadeInRight 2s;
+}
