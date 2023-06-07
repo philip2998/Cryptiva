@@ -1,4 +1,5 @@
 import ListItem from './ListItem';
+import { securityText } from './text';
 
 const AboutSecurity = () => {
   return (
@@ -6,11 +7,7 @@ const AboutSecurity = () => {
       <div className="mb-3 mt-5">
         <h5 className="mb-4 why-us">Why Choose Us</h5>
         <h2 className="me-5">Provide Advanced Security for Advanced Threat</h2>
-        <p className="me-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation
-        </p>
+        <p className="me-5">{securityText}</p>
         <ul className="list-unstyled">
           <ListItem content="Content Delivery Network" />
           <ListItem content="Malware Detection Removal" />

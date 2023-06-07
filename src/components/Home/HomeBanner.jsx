@@ -1,6 +1,7 @@
 import Typewriter from './Typewriter';
 import headerImg from '../../assets/img/header-img.svg';
 import TrackVisibility from 'react-on-screen';
+import { header } from './text';
 
 const Banner = () => {
   const { text } = Typewriter(['Security', 'Protection', 'Company'], 1000);
@@ -26,12 +27,7 @@ const Banner = () => {
                       <h1 className="fw-bolder">With Reliable Service</h1>
                     </h1>
                   </div>
-                  <p className="py-0 ps-0 fs-sm ls-wider lh-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod enim tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip
-                  </p>
+                  <p className="py-0 ps-0 fs-sm ls-wider lh-base">{header}</p>
                 </div>
               </TrackVisibility>
             </div>

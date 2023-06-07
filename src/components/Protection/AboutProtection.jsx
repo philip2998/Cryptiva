@@ -1,4 +1,5 @@
 import ProtectionSkills from './ProtectionSkills';
+import { aboutText } from './text';
 
 const AboutProtection = () => {
   return (
@@ -13,12 +14,7 @@ const AboutProtection = () => {
           </h2>
         </div>
         <div className="mt-2 me-0 mb-2 ms-0">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut
-            aliquip ex ea commodo
-          </p>
+          <p>{aboutText}</p>
         </div>
         <ProtectionSkills />
       </div>

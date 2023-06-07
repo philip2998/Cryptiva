@@ -11,10 +11,6 @@
   animation: fadeInUp 2s;
 }
 
-.figure-row {
-  padding-left: 6.25em;
-}
-
 .super {
   color: var(--color-green);
   left: 5px;

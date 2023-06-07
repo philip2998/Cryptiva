@@ -1,4 +1,5 @@
 import protection from '../../assets/img/protection.jpg';
+import { opportunity } from './text';
 
 const ProtectionPicture = () => {
   return (
@@ -18,9 +19,7 @@ const ProtectionPicture = () => {
                     We Are Open For Opportunities!
                   </h1>
                   <p className="fs-xs w-100 pe-4 d-flex flex-wrap">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo
+                    {opportunity}
                   </p>
                 </div>
               </div>

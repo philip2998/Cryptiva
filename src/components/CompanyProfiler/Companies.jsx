@@ -1,3 +1,4 @@
+import Reveal from '../utils/Reveal';
 import Company from './Company';
 import software from '../../assets/img/software.svg';
 import hexatech from '../../assets/img/hexatech.svg';
@@ -28,19 +29,21 @@ const Companies = () => {
             </div>
           </div>
         </div>
-        <div
-          className="row d-flex justify-content-center mt-5"
-          style={{ marginLeft: '100px' }}
-        >
-          {companyData.map((company, index) => (
-            <Company
-              key={index}
-              id={index}
-              imageSrc={company.imageSrc}
-              imageAlt={company.imageAlt}
-            />
-          ))}
-        </div>
+        <Reveal>
+          <div
+            className="row d-flex justify-content-center mt-5"
+            style={{ marginLeft: '100px' }}
+          >
+            {companyData.map((company, index) => (
+              <Company
+                key={index}
+                id={index}
+                imageSrc={company.imageSrc}
+                imageAlt={company.imageAlt}
+              />
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );

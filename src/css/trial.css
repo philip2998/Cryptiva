@@ -1,0 +1,19 @@
+.parallax-img {
+  height: 50vh;
+}
+.parallax-img img {
+  opacity: 0.5;
+}
+
+.trial .row {
+  padding-top: 6.25em;
+}
+
+.trial-text p {
+  color: var(--color-white);
+  padding: 0 20%;
+}
+
+.trial-box {
+  animation: fadeInUp 2s;
+}

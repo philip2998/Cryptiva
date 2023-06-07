@@ -1,0 +1,7 @@
+.contactus i {
+  color: var(--color-green);
+}
+
+.contact-icon {
+  background-color: var(--color-blue-secondary);
+}

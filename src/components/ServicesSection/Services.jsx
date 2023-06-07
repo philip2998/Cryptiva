@@ -1,5 +1,6 @@
-import ServiceCard from './ServiceCard';
+import ServiceCard from '../Cards/ServiceCard';
 import serviceData from './serviceData';
+import Reveal from '../utils/Reveal';
 
 const Services = () => {
   return (
@@ -11,11 +12,13 @@ const Services = () => {
           <h2 className="fw-bold">What We Offer</h2>
         </div>
         <div className="col-12 px-5">
-          <div className="row">
-            {serviceData.map((service, index) => {
-              return <ServiceCard key={index} {...service} />;
-            })}
-          </div>
+          <Reveal>
+            <div className="row">
+              {serviceData.map((service, index) => {
+                return <ServiceCard key={index} {...service} />;
+              })}
+            </div>
+          </Reveal>
         </div>
       </div>
     </div>

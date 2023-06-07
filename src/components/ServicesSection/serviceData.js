@@ -4,43 +4,38 @@ import locker from '../../assets/img/locker.png';
 import dataBase from '../../assets/img/database.png';
 import highQuality from '../../assets/img/highQuality.svg';
 import effectiveProtection from '../../assets/img/effectiveProtection.svg';
+import { serviceText } from './text';
 
 const serviceData = [
   {
     imageSrc: net,
     title: 'Network Security',
-    description:
-      'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    description: serviceText,
   },
   {
     imageSrc: dataBase,
     title: 'Database Security',
-    description:
-      'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    description: serviceText,
   },
   {
     imageSrc: effectiveProtection,
     title: 'Web Security',
-    description:
-      'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    description: serviceText,
   },
   {
     imageSrc: locker,
     title: 'Locker Security',
-    description:
-      'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    description: serviceText,
   },
   {
     imageSrc: dataSecurity,
     title: 'Data Security',
-    description:
-      'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    description: serviceText,
   },
   {
     imageSrc: highQuality,
     title: 'Cloud Security',
-    description:
-      'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    description: serviceText,
   },
 ];
 
