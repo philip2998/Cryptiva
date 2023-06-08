@@ -1,4 +1,5 @@
 import GetTouch from './GetTouch';
+import Form from './Form';
 
 const Contact = () => {
   return (
@@ -8,7 +9,9 @@ const Contact = () => {
           <div className="col-sm-12 col-md-6">
             <GetTouch />
           </div>
-          <div className="col-sm-12 col-md-6"></div>
+          <div className="col-sm-12 col-md-6">
+            <Form />
+          </div>
         </div>
       </div>
     </section>

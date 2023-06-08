@@ -6,7 +6,7 @@ const ProtectionSkills = () => {
   return (
     <div className="container mt-2 mb-0 d-flex">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 pe-0">
           <div className="mt-0 me-2 mb-0 ms-0">
             <div className="text-start">
               <img
@@ -14,8 +14,8 @@ const ProtectionSkills = () => {
                 src={highQuality}
                 alt="High Quality Service"
               ></img>
-              <h4>High Quality Service</h4>
-              <p>{skillOne}</p>
+              <h4 className="pe-5">High Quality Service</h4>
+              <p className="mb-0">{skillOne}</p>
             </div>
           </div>
         </div>
@@ -25,8 +25,8 @@ const ProtectionSkills = () => {
             src={effectiveProtection}
             alt="Effective Protection"
           ></img>
-          <h4>Effective Protection</h4>
-          <p>{skillTwo}</p>
+          <h4 className="pe-5">Effective Protection</h4>
+          <p className="mb-0">{skillTwo}</p>
         </div>
       </div>
     </div>

@@ -1,19 +1,19 @@
 import { getTouch } from './text';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ContactBox from './ContactBox';
 import contactData from './contactData';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GetTouch = () => {
   return (
     <>
       <div className="d-flex flex-wrap">
-        <h5 className="">Contact Us</h5>
-        <h2 className="fs-2">Get In Touch</h2>
+        <h5 className="fs-sm">Contact Us</h5>
       </div>
+      <h2 className="fs-2 mt-2">Get In Touch</h2>
       <div className="d-flex flex-wrap">
-        <p>{getTouch}</p>
+        <p className="mb-5 text-left pe-5">{getTouch}</p>
       </div>
-      <div className="row contact-section">
+      <div className="row contact-section pe-5">
         {contactData.map((contact, index) => (
           <div key={index} className="col-sm-6">
             <ContactBox

@@ -11,8 +11,8 @@ elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
 leo`;
 
 export const skillOne = `
-Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
-eiusmod tempor incididunt
+Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod
+tempor incididunt
 `;
 
 export const skillTwo = `

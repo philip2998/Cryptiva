@@ -1,6 +1,6 @@
 .security {
   background-color: var(--color-blue-primary);
-  background-image: url('../assets/img/security-bg.jpg');
+  background-image: url('../../assets/img/security-bg.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

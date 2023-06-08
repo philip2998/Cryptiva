@@ -1,16 +1,18 @@
 import './css/App.css';
-import './css/navbar.css';
-import './css/banner.css';
-import './css/skills.css';
-import './css/companies.css';
-import './css/protection.css';
-import './css/security.css';
-import './css/highlights.css';
 import './css/animate.css';
-import './css/services.css';
-import './css/trial.css';
-import './css/contact.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './components/navigationBar/navbar.css';
+import './components/Home/banner.css';
+import './components/CompanyProfiler/skills.css';
+import './components/CompanyProfiler/companies.css';
+import './components/Protection/protection.css';
+import './components/Security/security.css';
+import './components/CompanyHighlights/highlights.css';
+import './components/ServicesSection/services.css';
+import './components/CompanyTrial/trial.css';
+import './components/Contact/contact.css';
+import './components/Footer/footer.css';
 
 import NavBar from './components/navigationBar/NavBar';
 import HomeBanner from './components/Home/HomeBanner';
@@ -21,6 +23,7 @@ import Highlights from './components/CompanyHighlights/Highlights';
 import Services from './components/ServicesSection/Services';
 import Trial from './components/CompanyTrial/Trial';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -34,6 +37,7 @@ function App() {
       <Services />
       <Trial />
       <Contact />
+      <Footer />
     </div>
   );
 }
