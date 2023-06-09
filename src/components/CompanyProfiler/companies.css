@@ -1,5 +1,4 @@
 .company {
-  animation: fadeInDown 2s;
   background-color: var(--color-blue-primary);
 }
 .company span {

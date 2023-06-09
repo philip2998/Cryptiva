@@ -13,7 +13,3 @@
   color: var(--color-white);
   padding: 0 20%;
 }
-
-.trial-box {
-  animation: fadeInUp 2s;
-}

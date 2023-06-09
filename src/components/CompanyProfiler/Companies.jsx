@@ -29,7 +29,7 @@ const Companies = () => {
             </div>
           </div>
         </div>
-        <Reveal>
+        <Reveal animationType="fadeInDown">
           <div
             className="row d-flex justify-content-center mt-5"
             style={{ marginLeft: '100px' }}

@@ -1,29 +1,33 @@
 import Input from './Input';
 import Textarea from './Textarea';
-import MainButton from '../Buttons/MainButton';
+import formFields from './formFields';
 
-const Form = () => {
-  const formFields = [
-    { type: 'text', placeholder: 'Your Name' },
-    { type: 'email', placeholder: 'Your Email' },
-    { type: 'text', placeholder: 'Your Subject' },
-    { type: 'textarea', placeholder: 'Your Message' },
-  ];
+const Form = ({ formDetails, onFormUpdate }) => {
   return (
-    <div className="row form-container">
-      <div className="form-box rounded-3 border-2 p-5">
-        <form>
-          {formFields.map((field, index) => {
-            if (field.type === 'textarea') {
-              return <Textarea key={index} placeholder={field.placeholder} />;
-            } else {
-              return <Input key={index} placeholder={field.placeholder} />;
-            }
-          })}
-          <MainButton text="SEND MESSAGE" />
-        </form>
-      </div>
-    </div>
+    <>
+      {formFields.map((field, index) => {
+        if (field.type === 'textarea') {
+          return (
+            <Textarea
+              key={index}
+              value={formDetails[field.category]}
+              placeholder={field.placeholder}
+              onChange={e => onFormUpdate(field.category, e.target.value)}
+            />
+          );
+        } else {
+          return (
+            <Input
+              key={index}
+              type={field.type}
+              value={formDetails[field.category]}
+              placeholder={field.placeholder}
+              onChange={e => onFormUpdate(field.category, e.target.value)}
+            />
+          );
+        }
+      })}
+    </>
   );
 };
 

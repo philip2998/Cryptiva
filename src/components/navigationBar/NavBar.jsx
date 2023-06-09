@@ -27,7 +27,7 @@ const NavBar = () => {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About Us' },
     { href: '#services', label: 'Services' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#connect', label: 'Contact' },
   ];
 
   const onUpdateActiveLink = value => setActiveLink(value);
@@ -57,11 +57,8 @@ const NavBar = () => {
                     onMouseEnter={handleDropdownOpen}
                     onMouseLeave={handleDropdownClose}
                   >
-                    <NavDropdown.Item
-                      className="dropdown-box bg-white rounded px-4"
-                      href="#services"
-                    >
-                      <span className="dropwdown-text mb-0">
+                    <NavDropdown.Item className="dropdown-box bg-white rounded px-4">
+                      <span className="dropdown-text mb-0">
                         Infrastructure Modernization
                       </span>
                     </NavDropdown.Item>

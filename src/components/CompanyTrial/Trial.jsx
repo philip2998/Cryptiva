@@ -1,5 +1,6 @@
 import { Parallax } from 'react-parallax';
 import { trialText } from './text';
+import Reveal from '../utils/Reveal';
 import parallaxImg from '../../assets/img/programmer-laptop.jpg';
 
 const Trial = () => {
@@ -15,17 +16,19 @@ const Trial = () => {
             <div className="row d-flex flex-wrap position-absolute align-items-center justify-content-center w-100">
               <div className="col-xs-12 md-8 lg-6 xl-4 text-center">
                 <div className="trial-box d-flex flex-wrap">
-                  <div className="trial-content">
-                    <div className="trial-title">
-                      <h2 className="pb-3">
-                        Still Confused About Our Features? Get a Free Trial 7
-                        Days
-                      </h2>
+                  <Reveal animationType="fadeInUp">
+                    <div className="trial-content">
+                      <div className="trial-title">
+                        <h2 className="pb-3">
+                          Still Confused About Our Features? Get a Free Trial 7
+                          Days
+                        </h2>
+                      </div>
+                      <div className="trial-text">
+                        <p>{trialText}</p>
+                      </div>
                     </div>
-                    <div className="trial-text">
-                      <p>{trialText}</p>
-                    </div>
-                  </div>
+                  </Reveal>
                 </div>
               </div>
             </div>

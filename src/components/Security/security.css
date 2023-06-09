@@ -36,11 +36,3 @@
 .check-icon {
   color: var(--color-green);
 }
-
-.why-us {
-  animation: fadeInLeft 2s;
-}
-
-.security img {
-  animation: fadeInRight 2s;
-}

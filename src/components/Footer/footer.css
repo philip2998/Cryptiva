@@ -25,11 +25,18 @@
 
 .social-icon-box span {
   margin: 0 10px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   background-color: var(--color-green);
+  transition: all 0.5s;
+}
+
+.social-icon-box span:hover {
+  width: 28px;
+  height: 28px;
 }
 
 .soc-icon {
   color: var(--color-white);
+  font-size: 18px;
 }

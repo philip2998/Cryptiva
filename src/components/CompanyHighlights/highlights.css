@@ -1,14 +1,9 @@
 .key-figures {
   background-color: var(--color-blue-secondary);
-  animation: fadeInUp 2s;
 }
 
 .icon-animation {
   color: var(--color-green);
-}
-
-.highlights {
-  animation: fadeInUp 2s;
 }
 
 .super {

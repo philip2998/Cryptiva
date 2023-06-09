@@ -7,7 +7,6 @@
   position: relative;
 }
 .item-box {
-  animation: fadeInUp 2s;
   background-color: var(--color-blue-secondary);
   border-radius: 10px 10px;
 }

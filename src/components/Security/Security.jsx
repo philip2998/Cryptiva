@@ -1,5 +1,6 @@
 import AboutSecurity from './AboutSecurity';
 import SecurityPicture from './SecurityPicture';
+import Reveal from '../utils/Reveal';
 
 const Security = () => {
   return (
@@ -10,7 +11,9 @@ const Security = () => {
           <AboutSecurity />
         </div>
         <div className="col-sm-12 col-md-6 d-flex flex-wrap pe-0">
-          <SecurityPicture />
+          <Reveal animationType="fadeInLeft">
+            <SecurityPicture />
+          </Reveal>
         </div>
       </div>
     </section>

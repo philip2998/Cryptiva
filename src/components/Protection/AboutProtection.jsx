@@ -1,4 +1,5 @@
 import ProtectionSkills from './ProtectionSkills';
+import Reveal from '../utils/Reveal';
 import { aboutText } from './text';
 
 const AboutProtection = () => {
@@ -6,7 +7,9 @@ const AboutProtection = () => {
     <div className="container about-protection">
       <div className="row">
         <div className="mb-2">
-          <h5 className="cryptiva-header">Welcome To Cryptiva</h5>
+          <Reveal animationType="fadeInLeft">
+            <h5 className="cryptiva-header">Welcome To Cryptiva</h5>
+          </Reveal>
         </div>
         <div className="ms-2 pt-0 pe-4 pb-2 ps-0">
           <h2 className="pe-5">

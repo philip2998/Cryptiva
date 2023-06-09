@@ -4,7 +4,7 @@ import Reveal from '../utils/Reveal';
 
 const Services = () => {
   return (
-    <div className="container-fluid position-relative services">
+    <div className="container-fluid position-relative services" id="services">
       <div className="bg-overlay"></div>
       <div className="row position-relative z-1">
         <div className="service-title text-center mb-5">
@@ -12,7 +12,7 @@ const Services = () => {
           <h2 className="fw-bold">What We Offer</h2>
         </div>
         <div className="col-12 px-5">
-          <Reveal>
+          <Reveal animationType="fadeInUp">
             <div className="row">
               {serviceData.map((service, index) => {
                 return <ServiceCard key={index} {...service} />;

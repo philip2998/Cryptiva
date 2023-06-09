@@ -15,12 +15,6 @@
   width: 40px;
   height: 40px;
 }
-.prot-picture {
-  animation: fadeInLeft 2s;
-}
-.cryptiva-header {
-  animation: fadeInRight 2s;
-}
 .opportunities {
   height: 580px;
 }

@@ -5,7 +5,7 @@ const SocialIcon = ({ icon, href }) => {
     <div className="social-icon-box d-flex">
       <span className="d-inline-block rounded-circle">
         <a href={href} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={icon} className="soc-icon" />
+          <FontAwesomeIcon icon={icon} className="soc-icon ps-2 pt-2" />
         </a>
       </span>
     </div>

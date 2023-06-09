@@ -1,5 +1,4 @@
 import './css/App.css';
-import './css/animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './components/navigationBar/navbar.css';

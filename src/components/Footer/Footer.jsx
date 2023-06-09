@@ -10,6 +10,18 @@ import {
 import SocialIcon from './SocialIcon';
 
 const Footer = () => {
+  const icons = [
+    { icon: faFacebookF, href: '#' },
+    { icon: faTwitter, href: '#' },
+    { icon: faInstagram, href: '#' },
+    { icon: faLinkedin, href: '#' },
+  ];
+  const links = [
+    { title: 'Home' },
+    { title: 'About Us' },
+    { title: 'Services' },
+    { title: 'Contact' },
+  ];
   return (
     <section className="footer px-0 pb-3">
       <div className="d-flex me-auto ms-auto">
@@ -26,17 +38,21 @@ const Footer = () => {
                 </div>
                 <div className="col-md-6 align-content-center align-items-center">
                   <ul className="nav justify-content-evenly">
-                    <FooterLink title="Home" />
-                    <FooterLink title="About Us" />
-                    <FooterLink title="Services" />
-                    <FooterLink title="Contact" />
+                    {links.map((link, index) => {
+                      return <FooterLink key={index} title={link.title} />;
+                    })}
                   </ul>
                 </div>
                 <div className="col-md-3 d-flex">
-                  <SocialIcon icon={faFacebookF} href="#" />
-                  <SocialIcon icon={faTwitter} href="#" />
-                  <SocialIcon icon={faInstagram} href="#" />
-                  <SocialIcon icon={faLinkedin} href="#" />
+                  {icons.map((icon, index) => {
+                    return (
+                      <SocialIcon
+                        key={index}
+                        icon={icon.icon}
+                        href={icon.href}
+                      />
+                    );
+                  })}
                 </div>
               </footer>
             </div>

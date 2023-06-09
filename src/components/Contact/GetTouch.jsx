@@ -1,5 +1,6 @@
 import { getTouch } from './text';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Reveal from '../utils/Reveal';
 import ContactBox from './ContactBox';
 import contactData from './contactData';
 
@@ -7,7 +8,9 @@ const GetTouch = () => {
   return (
     <>
       <div className="d-flex flex-wrap">
-        <h5 className="fs-sm">Contact Us</h5>
+        <Reveal animationType="fadeInRight">
+          <h5 className="fs-sm">Contact Us</h5>
+        </Reveal>
       </div>
       <h2 className="fs-2 mt-2">Get In Touch</h2>
       <div className="d-flex flex-wrap">

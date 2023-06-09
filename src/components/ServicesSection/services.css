@@ -20,15 +20,10 @@
   transform: translateY(-8px);
 }
 
-.service-title {
-  animation: fadeInUp 2s;
-}
-
 .service-main-title {
   color: var(--color-green);
 }
 
 .service-box {
   background-color: var(--color-blue-secondary);
-  animation: fadeInUp 2s;
 }
