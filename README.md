@@ -6,7 +6,7 @@ Built using:
 
 - Front-end library: React
 - CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+- React animation library: framer-motion
 
 ### `npm start`
 
