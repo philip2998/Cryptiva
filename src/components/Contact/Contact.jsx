@@ -1,5 +1,5 @@
 import GetTouch from './GetTouch';
-import MainButton from '../Buttons/MainButton';
+import MainButton from '../common/Buttons/MainButton';
 import Form from './Form';
 import { useState } from 'react';
 
@@ -47,10 +47,10 @@ const Contact = () => {
     <section className="contactus mt-5" id="connect">
       <div className="container position-relative">
         <div className="row d-flex flex-wrap">
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-12 col-lg-6">
             <GetTouch />
           </div>
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-12 col-lg-6">
             <div className="row form-container">
               <div className="form-box rounded-3 border-2 p-5">
                 <form onSubmit={handleSubmit}>

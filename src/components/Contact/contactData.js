@@ -9,11 +9,6 @@ const contactData = [
     description: 'Jl. Raya Ubud No.88, Bali - 80571',
   },
   {
-    icon: faHouse,
-    title: 'Denpaser',
-    description: 'Jl. Niti Mandala, Renon, Bali – 80225',
-  },
-  {
     icon: faPhoneVolume,
     title: 'Call Us',
     description: '(+62)81 234 998 112',

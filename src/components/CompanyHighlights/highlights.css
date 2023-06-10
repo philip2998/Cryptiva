@@ -11,3 +11,10 @@
   left: 5px;
   vertical-align: super;
 }
+.fun-fact-inner {
+  min-height: 126px;
+}
+.highlights {
+  position: relative;
+  z-index: 45;
+}

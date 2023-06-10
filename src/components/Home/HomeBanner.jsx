@@ -7,7 +7,7 @@ const Banner = () => {
   const { text } = Typewriter(['Security', 'Protection', 'Company'], 1000);
 
   return (
-    <section className="banner" id="home">
+    <section className="banner position-relative z-1" id="home">
       <div className="background-overlay">
         <div className="container">
           <div className="row aligh-items-center">

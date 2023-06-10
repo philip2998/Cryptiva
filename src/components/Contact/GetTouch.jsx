@@ -18,7 +18,7 @@ const GetTouch = () => {
       </div>
       <div className="row contact-section pe-5">
         {contactData.map((contact, index) => (
-          <div key={index} className="col-sm-6">
+          <div key={index} className="col-12">
             <ContactBox
               icon={<FontAwesomeIcon icon={contact.icon} />}
               title={contact.title}

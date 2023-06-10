@@ -9,7 +9,7 @@ const ProtectionPicture = () => {
           <div className="opportunity-box h-100 d-flex flex-wrap">
             <div className="main-pic position-relative d-flex flex-wrap">
               <img
-                className="img-fluid d-flex flex-wrap rounded opacity-75"
+                className="img-fluid d-flex flex-wrap rounded opacity-50"
                 src={protection}
                 alt="Protection"
               ></img>

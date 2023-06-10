@@ -1,4 +1,4 @@
-import CompanyCard from '../Cards/CompanyCard';
+import CompanyCard from '../common/Cards/CompanyCard';
 import Companies from './Companies';
 import security from '../../assets/img/security.svg';
 import privacy from '../../assets/img/privacy.svg';
@@ -7,7 +7,7 @@ import { securityService, dataPrivacy, industryCertified } from './text';
 
 const Skills = () => {
   return (
-    <section className="skill mb-4 pb-5" id="skills">
+    <section className="skill mb-4 pb-5 z-1" id="skills">
       <div className="container d-flex mb-5 p-2">
         <div className="row g-3 justify-content-between">
           <div className="col-sm-12 col-lg-4">

@@ -30,10 +30,7 @@ const Companies = () => {
           </div>
         </div>
         <Reveal animationType="fadeInDown">
-          <div
-            className="row d-flex justify-content-center mt-5"
-            style={{ marginLeft: '100px' }}
-          >
+          <div className="row d-flex justify-content-center mt-5">
             {companyData.map((company, index) => (
               <Company
                 key={index}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavLink from './NavLink';
 import logo from '../../assets/img/logo.svg';
@@ -7,7 +7,6 @@ import logo from '../../assets/img/logo.svg';
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
-  const [isDropdownOpen, setIsDrowpdownOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -29,53 +28,32 @@ const NavBar = () => {
     { href: '#services', label: 'Services' },
     { href: '#connect', label: 'Contact' },
   ];
-
   const onUpdateActiveLink = value => setActiveLink(value);
-  const handleDropdownOpen = () => setIsDrowpdownOpen(true);
-  const handleDropdownClose = () => setIsDrowpdownOpen(false);
 
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
-        <Container>
+        <Container className="pb-2">
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img className="img-fluid" src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              {navLinks.map((link, index) =>
-                link.label === 'Services' ? (
-                  <NavDropdown
-                    key={index}
-                    title={link.label}
-                    id="nav-bar-dropdown"
-                    className="navbar-link service-link"
-                    show={isDropdownOpen}
-                    onMouseEnter={handleDropdownOpen}
-                    onMouseLeave={handleDropdownClose}
-                  >
-                    <NavDropdown.Item className="dropdown-box bg-white rounded px-4">
-                      <span className="dropdown-text mb-0">
-                        Infrastructure Modernization
-                      </span>
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                ) : (
-                  <NavLink
-                    key={index}
-                    id={index}
-                    activeLink={activeLink}
-                    onUpdateActiveLink={onUpdateActiveLink}
-                    href={link.href}
-                    className="navbar-link"
-                  >
-                    {link.label}
-                  </NavLink>
-                )
-              )}
+            <Nav className="ms-auto flex-row">
+              {navLinks.map((link, index) => (
+                <NavLink
+                  key={index}
+                  id={index}
+                  activeLink={activeLink}
+                  onUpdateActiveLink={onUpdateActiveLink}
+                  href={link.href}
+                  className="navbar-link me-3"
+                >
+                  {link.label}
+                </NavLink>
+              ))}
             </Nav>
           </Navbar.Collapse>
         </Container>

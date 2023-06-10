@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 const Figure = ({ icon, number, symbol, title }) => {
   return (
-    <div className="d-flex flex-wrap py-3 px-3 text-center">
+    <div className="py-3 px-3 text-center">
       <div className="fun-fact-inner">
         <div className="icon-animation">
           <FontAwesomeIcon className="fs-1 m-0 p-0" icon={icon} />

@@ -4,7 +4,7 @@ const SecurityPicture = () => {
   return (
     <div className="d-flex flex-wrap">
       <img
-        className="rounded opacity-50"
+        className="img-fluid rounded opacity-50"
         src={securityMan}
         alt="Man at security work"
       ></img>

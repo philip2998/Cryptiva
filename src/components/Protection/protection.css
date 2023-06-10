@@ -3,7 +3,8 @@
   position: relative;
 }
 .about-protection {
-  padding: 15% 15% 15% 15%;
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 .about-protection h5 {
   color: var(--color-green);

@@ -1,11 +1,11 @@
-import ServiceCard from '../Cards/ServiceCard';
+import ServiceCard from '../common/Cards/ServiceCard';
 import serviceData from './serviceData';
 import Reveal from '../utils/Reveal';
 
 const Services = () => {
   return (
-    <div className="container-fluid position-relative services" id="services">
-      <div className="bg-overlay"></div>
+    <div className="container-fluid services z-n1" id="services">
+      <div className="background-overlay"></div>
       <div className="row position-relative z-1">
         <div className="service-title text-center mb-5">
           <h5 className="pb-3 service-main-title">Our Services</h5>

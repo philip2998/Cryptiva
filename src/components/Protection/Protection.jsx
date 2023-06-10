@@ -4,14 +4,14 @@ import Reveal from '../utils/Reveal';
 
 const Protection = () => {
   return (
-    <section className="container-fluid protection" id="about">
+    <section className="container-fluid protection z-1" id="about">
       <div className="row">
-        <div className="col-sm-12 col-md-6 d-flex flex-wrap">
+        <div className="col-md-12 col-lg-6 d-flex flex-wrap">
           <Reveal animationType="fadeInRight">
             <ProtectionPicture />
           </Reveal>
         </div>
-        <div className="col-sm-12 col-md-6 d-flex flex-wrap">
+        <div className="col-md-12 col-lg-6 d-flex flex-wrap">
           <AboutProtection />
         </div>
       </div>

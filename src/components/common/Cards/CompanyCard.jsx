@@ -1,4 +1,4 @@
-import Reveal from '../utils/Reveal';
+import Reveal from '../../utils/Reveal';
 
 const CompanyCard = ({ imageSrc, imageAlt, title, description }) => {
   return (
