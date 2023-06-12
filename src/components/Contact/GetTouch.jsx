@@ -1,4 +1,4 @@
-import { getTouch } from './text';
+import { getTouchDescription } from './text';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Reveal from '../utils/Reveal';
 import ContactBox from './ContactBox';
@@ -14,7 +14,7 @@ const GetTouch = () => {
       </div>
       <h2 className="fs-2 mt-2">Get In Touch</h2>
       <div className="d-flex flex-wrap">
-        <p className="mb-5 text-left pe-5">{getTouch}</p>
+        <p className="mb-5 text-left pe-5">{getTouchDescription}</p>
       </div>
       <div className="row contact-section pe-5">
         {contactData.map((contact, index) => (

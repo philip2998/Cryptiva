@@ -22,27 +22,35 @@ const Contact = () => {
   };
 
   const handleSubmit = async e => {
-    e.preventDefault();
-    setButtonText('Sending...');
-    const response = await fetch('http://localhost:3000', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText('Send');
-    const result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ succes: true, message: 'Message sent successfully' });
-    } else {
-      setStatus({
-        succes: false,
-        message: 'Something went wrong, please try again later.',
+    try {
+      e.preventDefault();
+      setButtonText('Sending...');
+
+      const response = await fetch('/api', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formDetails),
       });
+      setButtonText('Send');
+
+      const result = await response.json();
+      setFormDetails(formInitialDetails);
+
+      if (result.code === 200) {
+        setStatus({ succes: true, message: 'Message sent successfully' });
+      } else {
+        setStatus({
+          succes: false,
+          message: 'Something went wrong, please try again later.',
+        });
+      }
+    } catch (err) {
+      console.error('Error: ', err);
     }
   };
+
   return (
     <section className="contactus mt-5" id="connect">
       <div className="container position-relative">

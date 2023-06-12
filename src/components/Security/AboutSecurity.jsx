@@ -1,6 +1,6 @@
 import ListItem from './ListItem';
 import Reveal from '../utils/Reveal';
-import { securityText } from './text';
+import { securityTitle, securityDescription, securityWorks } from './text';
 
 const AboutSecurity = () => {
   return (
@@ -9,12 +9,12 @@ const AboutSecurity = () => {
         <Reveal animationType="fadeInRight">
           <h5 className="mb-4 why-us">Why Choose Us</h5>
         </Reveal>
-        <h2 className="me-5">Provide Advanced Security for Advanced Threat</h2>
-        <p className="me-5">{securityText}</p>
+        <h2 className="me-5">{securityTitle}</h2>
+        <p className="me-5">{securityDescription}</p>
         <ul className="list-unstyled">
-          <ListItem content="Content Delivery Network" />
-          <ListItem content="Malware Detection Removal" />
-          <ListItem content="24/7 Support And Remote Admit" />
+          {securityWorks.map((work, index) => (
+            <ListItem key={index} content={work} />
+          ))}
         </ul>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import ProtectionSkills from './ProtectionSkills';
 import Reveal from '../utils/Reveal';
-import { aboutText } from './text';
+import { protectionTitle, protectionDescription } from './text';
 
 const AboutProtection = () => {
   return (
@@ -12,12 +12,10 @@ const AboutProtection = () => {
           </Reveal>
         </div>
         <div className="ms-2 pt-0 pe-4 pb-2 ps-0">
-          <h2 className="pe-5">
-            The Perfect Solution For All The Protection Question
-          </h2>
+          <h2 className="pe-5">{protectionTitle}</h2>
         </div>
         <div className="mt-2 me-0 mb-2 ms-0">
-          <p>{aboutText}</p>
+          <p>{protectionDescription}</p>
         </div>
         <ProtectionSkills />
       </div>

@@ -1,5 +1,5 @@
 import { Parallax } from 'react-parallax';
-import { trialText } from './text';
+import { trialDescription, trialTitle } from './text';
 import Reveal from '../utils/Reveal';
 import parallaxImg from '../../assets/img/programmer-laptop.jpg';
 
@@ -19,13 +19,10 @@ const Trial = () => {
                   <Reveal animationType="fadeInUp">
                     <div className="trial-content">
                       <div className="trial-title">
-                        <h2 className="pb-3">
-                          Still Confused About Our Features? Get a Free Trial 7
-                          Days
-                        </h2>
+                        <h2 className="pb-3">{trialTitle}</h2>
                       </div>
                       <div className="trial-text">
-                        <p>{trialText}</p>
+                        <p>{trialDescription}</p>
                       </div>
                     </div>
                   </Reveal>

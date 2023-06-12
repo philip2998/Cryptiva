@@ -23,20 +23,27 @@
   border-color: var(--color-blue-border);
 }
 
-.social-icon-box span {
+.social-icon-box a {
   margin: 0 10px;
   width: 32px;
   height: 32px;
   background-color: var(--color-green);
-  transition: all 0.5s;
+  transition-duration: 0.4s;
 }
 
-.social-icon-box span:hover {
+.social-icon-box a:hover {
   width: 28px;
   height: 28px;
+  opacity: 0.8;
 }
 
 .soc-icon {
   color: var(--color-white);
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .social-icon-box {
+    padding-top: 20px;
+  }
 }

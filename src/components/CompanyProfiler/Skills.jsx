@@ -3,7 +3,14 @@ import Companies from './Companies';
 import security from '../../assets/img/security.svg';
 import privacy from '../../assets/img/privacy.svg';
 import certifiedIndustry from '../../assets/img/certifiedIndustry.svg';
-import { securityService, dataPrivacy, industryCertified } from './text';
+import {
+  skillOneDescription,
+  skillOneTitle,
+  skillTwoDescription,
+  skillTwoTitle,
+  skillThreeDescription,
+  skillThreeTitle,
+} from './text';
 
 const Skills = () => {
   return (
@@ -14,9 +21,9 @@ const Skills = () => {
             <div className="mt-3 mb-1">
               <CompanyCard
                 imageSrc={security}
-                imageAlt="Security"
-                title="Security Service"
-                description={securityService}
+                imageAlt={skillOneTitle}
+                title={skillOneTitle}
+                description={skillOneDescription}
               />
             </div>
           </div>
@@ -24,9 +31,9 @@ const Skills = () => {
             <div className="mt-3 mb-1 ">
               <CompanyCard
                 imageSrc={privacy}
-                imageAlt="Privacy"
-                title="Data Privacy"
-                description={dataPrivacy}
+                imageAlt={skillTwoTitle}
+                title={skillTwoTitle}
+                description={skillTwoDescription}
               />
             </div>
           </div>
@@ -34,9 +41,9 @@ const Skills = () => {
             <div className="mt-3 mb-1">
               <CompanyCard
                 imageSrc={certifiedIndustry}
-                imageAlt="Industry"
-                title="Industry Certified"
-                description={industryCertified}
+                imageAlt={skillThreeTitle}
+                title={skillThreeTitle}
+                description={skillThreeDescription}
               />
             </div>
           </div>

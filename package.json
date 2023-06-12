@@ -1,6 +1,7 @@
 {
   "name": "cryptiva",
   "version": "0.1.0",
+  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -11,13 +12,11 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "animate.css": "^4.1.1",
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.10.5",
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
     "framer-motion": "^10.12.16",
-    "nodemailer": "^6.7.5",
+    "i": "^0.3.7",
+    "npm": "^9.7.1",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-bootstrap-icons": "^1.10.3",

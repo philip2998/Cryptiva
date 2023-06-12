@@ -1,18 +1,8 @@
 import Reveal from '../utils/Reveal';
 import Company from './Company';
-import software from '../../assets/img/software.svg';
-import hexatech from '../../assets/img/hexatech.svg';
-import metrics from '../../assets/img/metrics.svg';
-import tripletech from '../../assets/img/tripletech.svg';
+import { numOfCompanies, companyData } from './text';
 
 const Companies = () => {
-  const companyData = [
-    { imageSrc: software, imageAlt: 'Software Company' },
-    { imageSrc: hexatech, imageAlt: 'Hexatech Company' },
-    { imageSrc: metrics, imageAlt: 'Metrics Company' },
-    { imageSrc: tripletech, imageAlt: 'Tripletech Company' },
-  ];
-
   return (
     <section className="company" id="companies">
       <div className="container">
@@ -22,7 +12,9 @@ const Companies = () => {
               <div className="companies-widget text-center">
                 <h2 className="fs-3">
                   Trusted Over{' '}
-                  <span className="position-relative mt-n5">2300 + </span>
+                  <span className="position-relative mt-n5">
+                    {numOfCompanies}
+                  </span>
                   Companies in the World
                 </h2>
               </div>

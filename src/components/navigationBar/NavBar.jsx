@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { BrowserRouter as Router } from 'react-router-dom';
+import navLinks from './navlinks';
 import NavLink from './NavLink';
 import logo from '../../assets/img/logo.svg';
 
@@ -22,12 +23,6 @@ const NavBar = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About Us' },
-    { href: '#services', label: 'Services' },
-    { href: '#connect', label: 'Contact' },
-  ];
   const onUpdateActiveLink = value => setActiveLink(value);
 
   return (

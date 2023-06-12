@@ -1,6 +1,11 @@
 import highQuality from '../../assets/img/highQuality.svg';
 import effectiveProtection from '../../assets/img/effectiveProtection.svg';
-import { skillOne, skillTwo } from './text';
+import {
+  protectionSkillOneTitle,
+  protectionSkillOneDescription,
+  protectionSkillTwoTitle,
+  protectionSkillTwoDescription,
+} from './text';
 
 const ProtectionSkills = () => {
   return (
@@ -14,8 +19,8 @@ const ProtectionSkills = () => {
                 src={highQuality}
                 alt="High Quality Service"
               ></img>
-              <h4 className="pe-5">High Quality Service</h4>
-              <p className="mb-0 pe-5 pb-3">{skillOne}</p>
+              <h4 className="pe-5">{protectionSkillOneTitle}</h4>
+              <p className="mb-0 pe-5 pb-3">{protectionSkillOneDescription}</p>
             </div>
           </div>
         </div>
@@ -25,8 +30,8 @@ const ProtectionSkills = () => {
             src={effectiveProtection}
             alt="Effective Protection"
           ></img>
-          <h4 className="pe-5">Effective Protection</h4>
-          <p className="mb-0 pe-5">{skillTwo}</p>
+          <h4 className="pe-5">{protectionSkillTwoTitle}</h4>
+          <p className="mb-0 pe-5">{protectionSkillTwoDescription}</p>
         </div>
       </div>
     </div>

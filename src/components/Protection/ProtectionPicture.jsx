@@ -1,5 +1,5 @@
 import protection from '../../assets/img/protection.jpg';
-import { opportunity } from './text';
+import { protectionImgTitle, protectionImgDescription } from './text';
 
 const ProtectionPicture = () => {
   return (
@@ -16,10 +16,10 @@ const ProtectionPicture = () => {
               <div className="position-absolute opportunity-caption">
                 <div className="w-40 h-30 rounded py-4 px-4 d-flex flex-wrap">
                   <h1 className="fs-5 fw-bold w-100 d-flex flex-wrap">
-                    We Are Open For Opportunities!
+                    {protectionImgTitle}
                   </h1>
                   <p className="fs-xs w-100 pe-4 d-flex flex-wrap">
-                    {opportunity}
+                    {protectionImgDescription}
                   </p>
                 </div>
               </div>
