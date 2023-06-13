@@ -1,0 +1,22 @@
+.card {
+  background-color: transparent !important;
+  border: none !important;
+}
+.skill {
+  background-color: var(--color-blue-primary);
+  position: relative;
+}
+.item-box {
+  background-color: var(--color-blue-secondary);
+  border-radius: 10px 10px;
+}
+.skill img {
+  width: 10%;
+  max-width: 100%;
+}
+.skill h4 {
+  color: var(--color-white);
+}
+.skill p {
+  color: var(--color-gray);
+}

@@ -1,0 +1,20 @@
+.key-figures {
+  background-color: var(--color-blue-secondary);
+}
+
+.icon-animation {
+  color: var(--color-green);
+}
+
+.super {
+  color: var(--color-green);
+  left: 5px;
+  vertical-align: super;
+}
+.fun-fact-inner {
+  min-height: 126px;
+}
+.highlights {
+  position: relative;
+  z-index: 45;
+}

@@ -1,0 +1,29 @@
+.services {
+  margin-top: -125px;
+  margin-bottom: 0px;
+  padding: 225px 0px 100px 0px;
+  background-color: var(--color-blue-primary);
+  background-image: url('../../assets/img/bg-image.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services img {
+  width: 60px;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.services img:hover {
+  transform: translateY(-8px);
+}
+
+.service-main-title {
+  color: var(--color-green);
+}
+
+.service-box {
+  background-color: var(--color-blue-secondary);
+}

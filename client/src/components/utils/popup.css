@@ -1,0 +1,33 @@
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup-content {
+  background-color: var(--color-white);
+  max-width: 400px;
+}
+
+.popup-content.success {
+  background-color: var(--color-blue-primary);
+  border: 1px solid var(--color-white);
+  color: var(--color-green);
+}
+
+.popup-content.failure {
+  background-color: var(--color-blue-primary);
+  border: 1px solid var(--color-white);
+  color: var(--color-danger);
+}
+
+.close-button {
+  background: none;
+  color: var(--color-gray);
+  cursor: pointer;
+}
