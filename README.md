@@ -24,3 +24,7 @@ The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 See this section about [https://create-react-app.dev/docs/deployment/] deployment page.
+
+### `npm run dev`
+
+For runs the app server
