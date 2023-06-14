@@ -1,0 +1,16 @@
+.company {
+  background-color: var(--color-blue-primary);
+}
+.company span {
+  color: var(--color-green);
+  top: -5px;
+}
+.main-company {
+  width: 140px;
+  filter: brightness(200%) contrast(200%) saturate(0%) blur(0px)
+    hue-rotate(0deg);
+  transition-duration: 0.25s;
+}
+.main-company:hover {
+  filter: none;
+}

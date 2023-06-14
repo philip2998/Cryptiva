@@ -1,0 +1,22 @@
+.security {
+  background-color: var(--color-blue-primary);
+  background-image: url('../../../assets/img/security-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.security h5 {
+  color: var(--color-green);
+}
+.security h2 {
+  color: var(--color-white);
+}
+
+.list-content {
+  color: var(--color-gray);
+}
+
+.check-icon {
+  color: var(--color-green);
+}

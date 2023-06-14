@@ -1,32 +1,39 @@
 import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './components/navigationBar/navbar.css';
-import './components/Home/banner.css';
-import './components/CompanyProfiler/skills.css';
-import './components/CompanyProfiler/companies.css';
-import './components/Protection/protection.css';
-import './components/Security/security.css';
-import './components/CompanyHighlights/highlights.css';
-import './components/ServicesSection/services.css';
-import './components/CompanyTrial/trial.css';
-import './components/Contact/contact.css';
-import './components/Footer/footer.css';
+import './components/sections/navigationBar/navbar.css';
+import './components/sections/Home/banner.css';
+import './components/sections/CompanyProfiler/companies.css';
+import './components/sections/CompanyProfiler/skills.css';
+import './components/sections/Protection/protection.css';
+import './components/sections/Security/security.css';
+import './components/sections/CompanyHighlights/highlights.css';
+import './components/sections/ServicesSection/services.css';
+import './components/sections/CompanyTrial/trial.css';
+import './components/sections/Contact/contact.css';
+import './components/sections/Footer/footer.css';
 
-import NavBar from './components/navigationBar/NavBar';
-import HomeBanner from './components/Home/HomeBanner';
-import Skills from './components/CompanyProfiler/Skills';
-import Protection from './components/Protection/Protection';
-import Security from './components/Security/Security';
-import Highlights from './components/CompanyHighlights/Highlights';
-import Services from './components/ServicesSection/Services';
-import Trial from './components/CompanyTrial/Trial';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import { Helmet } from 'react-helmet';
+import favicon from './assets/img/logo-favicon.png';
+
+import NavBar from './components/sections/navigationBar/NavBar';
+import HomeBanner from './components/sections/Home/HomeBanner';
+import Skills from './components/sections/CompanyProfiler/Skills';
+import Protection from './components/sections/Protection/Protection';
+import Security from './components/sections/Security/Security';
+import Highlights from './components/sections/CompanyHighlights/Highlights';
+import Services from './components/sections/ServicesSection/Services';
+import Trial from './components/sections/CompanyTrial/Trial';
+import Contact from './components/sections/Contact/Contact';
+import Footer from './components/sections/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <link rel="icon" href={favicon} type="image/png"></link>
+        <title>HybridOps - Cyber Security Services</title>
+      </Helmet>
       <NavBar />
       <HomeBanner />
       <Skills />
