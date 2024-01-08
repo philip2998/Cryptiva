@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const Typewriter = (toRotate, period) => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(130);
   const [index, setIndex] = useState(1);
 
   useEffect(() => {
@@ -18,20 +18,20 @@ const Typewriter = (toRotate, period) => {
       setText(updatedText);
 
       if (isDeleting) {
-        setDelta((prevDelta) => prevDelta / 2);
+        setDelta(130);
       }
 
       if (!isDeleting && updatedText === fullText) {
         setIsDeleting(true);
-        setIndex((prevIndex) => prevIndex - 1);
+        setIndex(prevIndex => prevIndex - 1);
         setDelta(period);
-      } else if (isDeleting && updatedText === "") {
+      } else if (isDeleting && updatedText === '') {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
         setIndex(1);
-        setDelta(500);
+        setDelta(130);
       } else {
-        setIndex((prevIndex) => prevIndex + 1);
+        setIndex(prevIndex => prevIndex + 1);
       }
     };
 
