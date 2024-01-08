@@ -1,5 +1,5 @@
 export const protectionTitle = `
-The Perfect Solutio For All
+The Perfect Solution For All
 The Protection Question
 `;
 export const protectionDescription = `

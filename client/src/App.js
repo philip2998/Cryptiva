@@ -37,10 +37,10 @@ function App() {
       <NavBar />
       <HomeBanner />
       <Skills />
+      <Services />
       <Protection />
       <Security />
       {/* <Highlights /> */}
-      <Services />
       <Trial />
       <Contact />
       <Footer />
