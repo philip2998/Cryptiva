@@ -13,9 +13,9 @@ const Trial = () => {
       >
         <div style={{ height: '500px' }}>
           <div className="container-fluid py-5 px-0">
-            <div className="row d-flex flex-wrap position-absolute align-items-center justify-content-center w-100">
+            <div className="main-trial row flex-wrap position-absolute align-items-center justify-content-center w-100 w-sm-auto">
               <div className="col-xs-12 md-8 lg-6 xl-4 text-center">
-                <div className="trial-box d-flex flex-wrap">
+                <div className="trial-box flex-wrap">
                   <Reveal animationType="fadeInUp">
                     <div className="trial-content">
                       <div className="trial-title">

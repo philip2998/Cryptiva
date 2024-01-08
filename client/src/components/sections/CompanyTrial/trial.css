@@ -13,3 +13,9 @@
   color: var(--color-white);
   padding: 0 20%;
 }
+
+@media (max-width: 575.98px) {
+  .main-trial {
+    width: auto !important;
+  }
+}
