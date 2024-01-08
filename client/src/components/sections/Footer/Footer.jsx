@@ -13,13 +13,18 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <footer className="row footer-section d-flex flex-wrap mb-3">
-                <div className="col-md-3 col-sm-12 text-center">
+                <div
+                  className={`col-md-3 col-sm-12 ${
+                    window.innerWidth < 576 ? 'text-center' : 'text-end'
+                  }`}
+                >
                   <img
                     src={logo}
                     alt="Logo"
                     className="footer-logo col-md-4 mb-3 mb-md-0"
-                  ></img>
+                  />
                 </div>
+
                 <div className="col-md-6 pt-3">
                   <ul className="nav justify-content-evenly">
                     {navLinks.map((link, index) => {
@@ -33,7 +38,13 @@ const Footer = () => {
                     })}
                   </ul>
                 </div>
-                <div className="col-md-3 d-flex justify-content-center">
+                <div
+                  className={`col-md-3 d-flex ${
+                    window.innerWidth < 576
+                      ? 'justify-content-center'
+                      : 'justify-content-start'
+                  }`}
+                >
                   {iconsData.map((icon, index) => {
                     if (icon.href && icon.href.startsWith('http')) {
                       return (
