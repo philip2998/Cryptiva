@@ -21,7 +21,7 @@ import HomeBanner from './components/sections/Home/HomeBanner';
 import Skills from './components/sections/CompanyProfiler/Skills';
 import Protection from './components/sections/Protection/Protection';
 import Security from './components/sections/Security/Security';
-import Highlights from './components/sections/CompanyHighlights/Highlights';
+// import Highlights from './components/sections/CompanyHighlights/Highlights';
 import Services from './components/sections/ServicesSection/Services';
 import Trial from './components/sections/CompanyTrial/Trial';
 import Contact from './components/sections/Contact/Contact';
@@ -39,7 +39,7 @@ function App() {
       <Skills />
       <Protection />
       <Security />
-      <Highlights />
+      {/* <Highlights /> */}
       <Services />
       <Trial />
       <Contact />

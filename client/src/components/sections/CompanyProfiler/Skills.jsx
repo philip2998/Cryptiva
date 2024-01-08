@@ -1,5 +1,5 @@
 import CompanyCard from '../../common/Cards/CompanyCard';
-import Companies from './Companies';
+// import Companies from './Companies';
 import security from '../../../assets/img/security.svg';
 import privacy from '../../../assets/img/privacy.svg';
 import certifiedIndustry from '../../../assets/img/certifiedIndustry.svg';
@@ -49,7 +49,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <Companies />
+      {/* <Companies /> */}
     </section>
   );
 };
